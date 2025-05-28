@@ -247,7 +247,6 @@ const Register = () =>
                             Continue with Google
                         </Button>
                     </div>
-                    787878
                     <p className="mt-6 text-center text-gray-300">
                         Already have an account?{' '}
                         <Link href="/login" className="text-crypto-purple hover:text-crypto-purple-light">

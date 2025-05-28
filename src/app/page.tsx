@@ -10,6 +10,7 @@ import Image from 'next/image';
 import heroimage from '../../public/hero-image.png';
 import whyimage from '../../public/why-image.png';
 import Calculator from './components/Calculator';
+import Link from 'next/link';
 
 const Index = () =>
 {
@@ -197,9 +198,11 @@ const Index = () =>
               <p className="text-gray-300 text-lg mb-8">
                 Experience the next generation cryptocurrency platform. No financial borders, extra fees, and fake reviews.
               </p>
-              <Button className="bg-accent cursor-pointer hover:opacity-90 text-white px-8 py-4 rounded-full">
-                Learn More
-              </Button>
+              <Link href='/learn-more'>
+                <Button className="bg-accent cursor-pointer hover:opacity-90 text-white px-8 py-4 rounded-full">
+                  Learn More
+                </Button>
+              </Link>
             </motion.div>
           </div>
         </div>
