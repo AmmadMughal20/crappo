@@ -1,11 +1,11 @@
 'use client'
-import { motion } from 'framer-motion';
+import { BitcoinChart, EthereumChart, LitecoinChart, PortfolioChart, TradingChart } from '@/app/components/CryptoCharts';
+import { FloatingCircle, FloatingCube, FloatingDiamond } from '@/app/components/GeometricShapes';
+import Navigation from '@/app/components/Navigation';
 import { Button } from '@/app/components/ui/button';
 import { Card } from '@/app/components/ui/card';
 import { Input } from '@/app/components/ui/input';
-import Navigation from '@/app/components/Navigation';
-import { FloatingCube, FloatingDiamond, FloatingCircle, CryptoCoin } from '@/app/components/GeometricShapes';
-import { BitcoinChart, EthereumChart, LitecoinChart, PortfolioChart, TradingChart } from '@/app/components/CryptoCharts';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import heroimage from '../../public/hero-image.png';
 import whyimage from '../../public/why-image.png';
@@ -543,7 +543,7 @@ const Index = () =>
                 <span className="text-white font-bold text-xl">CRAPPO</span>
               </div>
               <p className="text-gray-400 mb-6">
-                We're committed to providing our users with the best cryptocurrency trading experience.
+                We&apos;re committed to providing our users with the best cryptocurrency trading experience.
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">

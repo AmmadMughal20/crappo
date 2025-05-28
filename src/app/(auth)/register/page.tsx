@@ -75,7 +75,7 @@ const Register = () =>
                                 <Mail className="w-8 h-8 text-white" />
                             </div>
                             <h1 className="text-2xl font-bold text-white mb-2">Verify Your Email</h1>
-                            <p className="text-gray-300">We've sent a verification code to</p>
+                            <p className="text-gray-300">We&apos;ve sent a verification code to</p>
                             <p className="text-white font-medium">{formData.email}</p>
                         </div>
 
@@ -103,7 +103,7 @@ const Register = () =>
                         </form>
 
                         <div className="text-center mt-6">
-                            <p className="text-gray-300 mb-2">Didn't receive the code?</p>
+                            <p className="text-gray-300 mb-2">Didn&apos;t receive the code?</p>
                             <Button
                                 onClick={resendOTP}
                                 variant="ghost"
@@ -126,13 +126,13 @@ const Register = () =>
                 transition={{ duration: 0.6 }}
                 className="w-full max-w-md"
             >
-                <a
+                <Link
                     href="/"
                     className="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors"
                 >
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back to Home
-                </a>
+                </Link>
 
                 <Card className="bg-white/10 border-white/20 backdrop-blur-lg p-8">
                     <div className="text-center mb-8">
@@ -247,7 +247,7 @@ const Register = () =>
                             Continue with Google
                         </Button>
                     </div>
-
+                    787878
                     <p className="mt-6 text-center text-gray-300">
                         Already have an account?{' '}
                         <Link href="/login" className="text-crypto-purple hover:text-crypto-purple-light">
