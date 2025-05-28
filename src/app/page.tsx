@@ -53,16 +53,18 @@ const Index = () =>
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Button className="bg-accent cursor-pointer hover:opacity-90 text-white px-8 py-8 text-lg rounded-full">
-                  Try for FREE
-                  <motion.span
-                    className="ml-2 bg-white text-accent px-1.5 rounded-full inline-block"
-                    animate={{ x: [0, 5, 0] }}
-                    transition={{ duration: 1.5, repeat: Infinity }}
-                  >
-                    →
-                  </motion.span>
-                </Button>
+                <Link href='/register'>
+                  <Button className="bg-accent cursor-pointer hover:opacity-90 text-white px-8 py-8 text-lg rounded-full">
+                    Try for FREE
+                    <motion.span
+                      className="ml-2 bg-white text-accent px-1.5 rounded-full inline-block"
+                      animate={{ x: [0, 5, 0] }}
+                      transition={{ duration: 1.5, repeat: Infinity }}
+                    >
+                      →
+                    </motion.span>
+                  </Button>
+                </Link>
               </motion.div>
             </motion.div>
 
