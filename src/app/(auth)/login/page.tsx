@@ -6,6 +6,7 @@ import { Input } from '@/app/components/ui/input';
 import { Card } from '@/app/components/ui/card';
 import { Label } from '@/app/components/ui/label';
 import { Mail, Lock, ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 
 const Login = () =>
 {
@@ -33,13 +34,13 @@ const Login = () =>
                 transition={{ duration: 0.6 }}
                 className="w-full max-w-md"
             >
-                <a
+                <Link
                     href="/"
                     className="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors"
                 >
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back to Home
-                </a>
+                </Link>
 
                 <Card className="bg-white/10 border-white/20 backdrop-blur-lg p-8">
                     <div className="text-center mb-8">
@@ -121,9 +122,9 @@ const Login = () =>
 
                     <p className="mt-6 text-center text-gray-300">
                         Don't have an account?{' '}
-                        <a href="/register" className="text-crypto-purple hover:text-crypto-purple-light">
+                        <Link href="/register" className="text-crypto-purple hover:text-crypto-purple-light">
                             Sign up
-                        </a>
+                        </Link>
                     </p>
                 </Card>
             </motion.div>

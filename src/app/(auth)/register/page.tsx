@@ -6,6 +6,7 @@ import { Input } from '@/app/components/ui/input';
 import { Card } from '@/app/components/ui/card';
 import { Label } from '@/app/components/ui/label';
 import { Mail, Lock, User, ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 
 const Register = () =>
 {
@@ -249,9 +250,9 @@ const Register = () =>
 
                     <p className="mt-6 text-center text-gray-300">
                         Already have an account?{' '}
-                        <a href="/login" className="text-crypto-purple hover:text-crypto-purple-light">
+                        <Link href="/login" className="text-crypto-purple hover:text-crypto-purple-light">
                             Sign in
-                        </a>
+                        </Link>
                     </p>
                 </Card>
             </motion.div>

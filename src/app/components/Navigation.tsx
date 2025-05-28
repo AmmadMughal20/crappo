@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/app/components/ui/button';
+import Link from 'next/link';
 
 const Navigation = () =>
 {
@@ -73,16 +74,16 @@ const Navigation = () =>
 
                     {/* Desktop Buttons */}
                     <div className="hidden md:flex items-center space-x-4">
-                        <a href='/login'>
+                        <Link href='/login'>
                             <Button variant="ghost" className="cursor-pointer text-white hover:text-crypto-purple">
                                 Login
                             </Button>
-                        </a>
-                        <a href='/register'>
+                        </Link>
+                        <Link href='/register'>
                             <Button className="bg-accent cursor-pointer rounded-full hover:opacity-90 text-white px-6">
                                 Register
                             </Button>
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Mobile Menu Button */}
