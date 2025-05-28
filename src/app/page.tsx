@@ -11,9 +11,41 @@ import heroimage from '../../public/hero-image.png';
 import whyimage from '../../public/why-image.png';
 import Calculator from './components/Calculator';
 import Link from 'next/link';
+import { useState } from 'react';
 
 const Index = () =>
 {
+  const [email, setEmail] = useState('');
+
+  const handleSubscribe = async () =>
+  {
+    if (!email) return alert('Please enter your email');
+
+    try
+    {
+      const res = await fetch('/api/subscription', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await res.json();
+      if (!res.ok)
+      {
+        alert(data.error);
+      } else
+      {
+        alert('Subscribed successfully!');
+        setEmail('');
+      }
+    } catch (err)
+    {
+      console.error(err);
+      alert('Failed to subscribe');
+    }
+  };
   return (
     <div className="min-h-screen bg-background text-white overflow-hidden">
       <Navigation />
@@ -521,10 +553,12 @@ const Index = () =>
 
             <div className="max-w-md mx-auto flex gap-4">
               <Input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email"
                 className="bg-white/20 border-white/30 text-white placeholder:text-white/60 flex-1"
               />
-              <Button className="bg-accent text-crypto-blue hover:bg-white/90 px-8">
+              <Button onClick={handleSubscribe} className="bg-accent text-crypto-blue hover:bg-white/90 px-8">
                 Subscribe
               </Button>
             </div>
