@@ -117,12 +117,16 @@ const Navigation = () =>
                                 </a>
                             ))}
                             <div className="flex flex-col space-y-2 px-3 pt-4">
-                                <Button variant="ghost" className="text-white justify-start">
-                                    Login
-                                </Button>
-                                <Button className="bg-accent text-white">
-                                    Register
-                                </Button>
+                                <Link href='/login'>
+                                    <Button variant="ghost" className="text-white justify-start">
+                                        Login
+                                    </Button>
+                                </Link>
+                                <Link href='/register'>
+                                    <Button className="bg-accent text-white">
+                                        Register
+                                    </Button>
+                                </Link>
                             </div>
                         </div>
                     </motion.div>
