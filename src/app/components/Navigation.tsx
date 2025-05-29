@@ -37,7 +37,7 @@ const Navigation = () =>
                             }
                         }}
                     >
-                        <div className="w-8 h-8 bg-gradient-purple rounded-lg flex items-center justify-center">
+                        <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
                             <span className="text-white font-bold text-lg">C</span>
                         </div>
                         <span className="text-white font-bold text-xl">CRAPPO</span>
@@ -120,7 +120,7 @@ const Navigation = () =>
                                 <Button variant="ghost" className="text-white justify-start">
                                     Login
                                 </Button>
-                                <Button className="bg-gradient-purple text-white">
+                                <Button className="bg-accent text-white">
                                     Register
                                 </Button>
                             </div>

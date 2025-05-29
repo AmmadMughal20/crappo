@@ -102,7 +102,7 @@ const Calculator = () =>
 
                     <Button
                         onClick={calculateEarnings}
-                        className="w-full bg-gradient-purple hover:opacity-90 text-white py-3"
+                        className="w-full bg-accent hover:opacity-90 text-white py-3"
                     >
                         Calculate Earnings
                     </Button>

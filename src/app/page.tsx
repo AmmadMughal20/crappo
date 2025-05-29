@@ -163,7 +163,7 @@ const Index = () =>
       </section>
 
       {/* Why Choose Section */}
-      <section className="min-h-[90vh] py-1`0 px-4 sm:px-6 lg:px-32" id='inquire'>
+      <section className="min-h-[90vh] py-30 px-4 sm:px-6 lg:px-32" id='inquire'>
         <div className="mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Why Illustration */}
@@ -243,7 +243,7 @@ const Index = () =>
       </section>
 
       {/* Calculator Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white/5" id="features">
         <div className="container mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -397,7 +397,7 @@ const Index = () =>
                   </div>
                 </div>
 
-                <Button className="bg-gradient-purple hover:opacity-90 text-white px-8 py-4 rounded-full">
+                <Button className="bg-accent hover:opacity-90 text-white px-8 py-4 rounded-full">
                   Learn More
                 </Button>
               </div>
@@ -528,7 +528,7 @@ const Index = () =>
                 </Card>
               </div>
 
-              <Button className="w-full bg-gradient-purple hover:opacity-90 text-white py-4 text-lg rounded-full">
+              <Button className="w-full bg-accent hover:opacity-90 text-white py-4 text-lg rounded-full">
                 Start Trading
               </Button>
             </motion.div>
@@ -576,7 +576,7 @@ const Index = () =>
               transition={{ duration: 0.6 }}
             >
               <div className="flex items-center space-x-2 mb-6">
-                <div className="w-8 h-8 bg-gradient-purple rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-lg">C</span>
                 </div>
                 <span className="text-white font-bold text-xl">CRAPPO</span>
@@ -651,7 +651,7 @@ const Index = () =>
           </div>
 
           <div className="border-t border-white/10 mt-12 pt-8 text-center">
-            <p className="text-gray-400">©2021 CRAPPO. All rights reserved</p>
+            <p className="text-gray-400">©2025 CRAPPO. All rights reserved</p>
           </div>
         </div>
 
